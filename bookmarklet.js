@@ -4,7 +4,7 @@ javascript:(function(){
     document.body.appendChild(newScript);
 
     newScript = document.createElement('script');
-    newScript.src = 'file:///Users/shanereed/wdi/bookmarklet/catchframe.js?dummy='
+    newScript.src = 'http://cinegrain.com/wp-content/uploads/2013/11/cfbookmarklet.js?dummy='
                      + Math.random();
     document.body.appendChild(newScript);
 })();
