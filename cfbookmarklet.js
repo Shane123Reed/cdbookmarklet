@@ -1,23 +1,20 @@
 
-    
+// ADD EXTERNAL STYLESHEET bookmark.css    
 $('<link>')
     .appendTo($('head'))
     .attr({type : 'text/css', rel : 'stylesheet'})
     .attr('href', 'bookmark.css');    
 
 
-// PLACE ALL IMAGES INSIDE DIVS IN THEIR SAME LOCATION
-$( 'img' ).wrap( "<div class='floatwrapper'><div class='floating'></div></div>" );
+// FINISHED ADDING ELEMENTS TO DOM ******************************************************************  
 
-
-//********************************************************************************************  
-// FINISHED ADDING ELEMENT TO DOM
 
 
 
 
 // BOOKMARK CLICKED - CSS CHANGES
-$( 'img' ).animate({ borderRadius:'30px' }, 150);
+$( 'img' ).animate({ borderRadius:'10px' }, 0);
+
 
 
 // IMG CLICKED - POST
