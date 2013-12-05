@@ -1,40 +1,36 @@
-// DOM GETTING ELEMENTS
-// GET IMG
-// var images = document.getElementsByTagName('img');
 
-// for(var i = 0; i < images.length; i++) {
-//   var image = images[i];
-//   image.onclick=function(){
-//     $.post("http://localhost:3000/bookmarks", { url: this.src } ).done(function( data ) {
-//       alert( "Catchframe: Lookmarked!");
-//     });
-//   };
-// }
-
-// for(var i = 0; i < images.length; i++) {
-//   var image = images[i];
-//   image.setAttribute('style', 'border-radius: 20px');
-// }
+    
+$('<link>')
+    .appendTo($('head'))
+    .attr({type : 'text/css', rel : 'stylesheet'})
+    .attr('href', 'bookmark.css');    
 
 
-$(function(){
-    //BOOKMARK CLICKED CSS CHANGES
-    $( 'img' ).animate({ borderRadius:'30px' }, 150);
+// PLACE ALL IMAGES INSIDE DIVS IN THEIR SAME LOCATION
+$( 'img' ).wrap( "<div class='floatwrapper'><div class='floating'></div></div>" );
 
-    //IMG CLICKED POST
-    $( 'img' ).click(function() {
 
-        $.post("http://localhost:3000/bookmarks", { url: this.src } ).done(function( data ) {
-            alert( "Catchframe: Lookmarked!");
-        });
+//********************************************************************************************  
+// FINISHED ADDING ELEMENT TO DOM
 
+
+
+
+// BOOKMARK CLICKED - CSS CHANGES
+$( 'img' ).animate({ borderRadius:'30px' }, 150);
+
+
+// IMG CLICKED - POST
+$( 'img' ).click(function() {
+
+    $.post("http://localhost:3000/bookmarks", { url: this.src } ).done(function( data ) {
+        alert( "Catchframe: Lookmarked!");
     });
+
+});
+
+
+
     
 
 
-
-
-
-
-
-});
