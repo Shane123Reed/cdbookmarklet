@@ -1,28 +1,25 @@
+
 // ADD EXTERNAL STYLESHEET bookmark.css    
-$('<link>')
-    .appendTo($('head'))
-    .attr({type : 'text/css', rel : 'stylesheet'})
-    .attr('href', 'bookmark.css');    
+$('head').append("<link rel='stylesheet', type='text/css', href='bookmark.css'>");
 
 
-// FINISHED ADDING ELEMENTS TO DOM ******************************************************************  
-
-
-
-
-
-// BOOKMARK CLICKED - CSS CHANGES
-$( 'img' ).animate({ borderRadius:'10px' }, 0);
-
+// ADD GUI ELEMENTS TO HOST PAGE
 $( 'body' ).prepend( "<div class='Catchframe123'></div>" );
 $( '.Catchframe123' ).prepend( "<div class='CatchframeHeader123'><p>Catchframe</p></div>" );
+$( '.Catchframe123' ).append( "<div class='CatchframeImage098'></div>" );
+$( '.CatchframeImage098' ).prepend( "<div class='CatchframeImage099'></div>" );
+$( 'img' ).clone().appendTo( '.Catchframe123' );
+
+
+$( '.Catchframe123' ).delay( .01 ).animate({ opacity:'1.0', width:'150px' }, 400);
 
 
 
-// newdiv2, newdiv3, $('img')
+// FINISHED ADDING ELEMENTS TO DOM ******************************************************************
+
+
+
     
-
-
 
 
 // IMG CLICKED - POST
