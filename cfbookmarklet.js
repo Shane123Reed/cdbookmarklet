@@ -1,4 +1,3 @@
-
 // ADD EXTERNAL STYLESHEET bookmark.css    
 $('<link>')
     .appendTo($('head'))
@@ -15,6 +14,15 @@ $('<link>')
 // BOOKMARK CLICKED - CSS CHANGES
 $( 'img' ).animate({ borderRadius:'10px' }, 0);
 
+$( 'body' ).prepend( "<div class='Catchframe123'></div>" );
+$( '.Catchframe123' ).prepend( "<div class='CatchframeHeader123'><p>Catchframe</p></div>" );
+
+
+
+// newdiv2, newdiv3, $('img')
+    
+
+
 
 
 // IMG CLICKED - POST
@@ -26,8 +34,5 @@ $( 'img' ).click(function() {
 
 });
 
-
-
-    
 
 
