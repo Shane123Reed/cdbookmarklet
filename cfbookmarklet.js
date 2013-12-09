@@ -7,8 +7,16 @@ $('head').append("<link rel='stylesheet', type='text/css', href='bookmark.css'>"
 $( 'body' ).prepend( "<div class='Catchframe123'></div>" );
 $( '.Catchframe123' ).prepend( "<div class='CatchframeHeader123'><p>Catchframe</p></div>" );
 
-// CLONE ALL IMAGES INTO GUI
-$( 'img' ).clone().appendTo( '.Catchframe123' );
+// CLONE ALL IMAGES (bigger than height:150px) INTO GUI
+$( 'img' ).each(function() {
+
+    if ( $( this ).css("height") >= '150px') {
+        $( this ).clone().appendTo( '.Catchframe123' );
+    }
+
+});
+
+
 
 // SLIDE IN FROM RIGHT
 $( '.Catchframe123' ).delay( .01 ).animate({ opacity:'1.0', width:'150px' }, 400);
