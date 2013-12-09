@@ -46,6 +46,7 @@
   position: relative;
   float: left;
   height: 150px;
+  width: auto;
 }
 
 .CatchframeLargerImage123 {
@@ -62,6 +63,7 @@
   right: 150px;
   top: 50px;
   height: 80%;
+  width: auto;
   opacity: 1;
   border-radius: 5px 0px 0px 5px;
   z-index: 2147483646;
