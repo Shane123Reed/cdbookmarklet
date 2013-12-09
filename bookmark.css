@@ -7,10 +7,20 @@
   width: 1px;
   opacity: 0.0;
   background-color: rgba(150, 150, 150, .8);
-  -moz-box-shadow:    3px 3px 0px 2500px rgba(0, 0, 0, .4);
-  -webkit-box-shadow: 3px 3px 0px 2500px rgba(0, 0, 0, .4);
-  box-shadow:         3px 3px 0px 2500px rgba(0, 0, 0, .4);
-  z-index: 99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 2147483647;
+}
+
+.CatchframeDark123 {
+  background-color: rgba(50, 50, 50, .5);
+  position: fixed;
+  opacity: 0.0;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  width: 2000px;
+  z-index: 2147483644;
 }
 
 .CatchframeHeader123 {
@@ -37,6 +47,27 @@
   float: left;
   height: 150px;
 }
+
+.CatchframeLargerImage123 {
+  position: fixed;
+  right: 150px;
+  top: 50px;
+  height: 0px;
+  opacity: 1;
+  z-index: 2147483645;
+}
+
+.CatchframeLargerImage123 img{
+  position: fixed;
+  right: 150px;
+  top: 50px;
+  height: 80%;
+  opacity: 1;
+  border-radius: 5px 0px 0px 5px;
+  z-index: 2147483646;
+}
+
+
 
 
 
