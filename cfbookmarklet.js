@@ -1,6 +1,6 @@
 $(function(){
     // ADD EXTERNAL STYLESHEET bookmark.css    
-    $('head').append("<link rel='stylesheet', type='text/css', href='localhost:3000/bookmark.css'>");
+    $('head').append("<link rel='stylesheet', type='text/css', href='http://cinegrain.com/wp-content/uploads/2014/02/bookmark.css'>");
 
     $(function(){
         // ADD GUI ELEMENTS TO HOST PAGE
@@ -29,7 +29,8 @@ $(function(){
         $( 'img' ).click(function() {
 
             $.post( "http://localhost:3000/bookmarks", { url:  window.location.href, src: this.src, name: this.alt }).done(function( data ) {
-            $( 'body' ).prepend( "<div class='lookmarked'>Eye</div>" );
+            $( 'body' ).prepend( "<div class='lookmarked'></div>" );
+            $( '.lookmarked' ).animate({ opacity:'0.0' }, 600);
           });
 
         });
