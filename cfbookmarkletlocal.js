@@ -28,7 +28,7 @@ $(function(){
         // IMG CLICKED - POST
         $( 'img' ).click(function() {
 
-            $.post( "http://catchframe.herokuapp.com/bookmarks", { url:  window.location.href, src: this.src, name: this.alt }).done(function( data ) {
+            $.post( "http://localhost:3000/bookmarks", { url:  window.location.href, src: this.src, name: this.alt }).done(function( data ) {
             $( 'body' ).prepend( "<div class='lookmarked'></div>" );
             $( '.lookmarked' ).animate({ opacity:'0.0' }, 600, function() {
                 $( '.lookmarked' ).remove(); 
