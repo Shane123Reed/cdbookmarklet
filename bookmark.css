@@ -69,7 +69,11 @@
   z-index: 2147483646;
 }
 
-
+.lookmarked {
+  height: 200px;
+  width: 100%;
+  background-color: pink;
+}
 
 
 
