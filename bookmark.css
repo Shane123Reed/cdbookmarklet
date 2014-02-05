@@ -45,8 +45,8 @@
 .Catchframe123 img {
   position: relative;
   float: left;
-  height: 150px;
-  width: auto;
+  height: auto;
+  width: 200px;
 }
 
 .CatchframeLargerImage123 {
