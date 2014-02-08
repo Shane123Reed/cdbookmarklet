@@ -8,7 +8,7 @@ $(function(){
         $( '.Catchframe123' ).prepend( "<div class='CatchframeHeader123'><p>Catchframe</p></div>" );
         $( 'body' ).prepend( "<div class='CatchframeDark123'></div>" );
 
-        // CLONE ALL IMAGES (bigger than height:150px) INTO GUI
+        // CLONE ALL IMAGES (bigger than height:75px) INTO GUI
         $( 'img' ).each(function() {
 
             if ( $( this ).height() >= 75 ) {
