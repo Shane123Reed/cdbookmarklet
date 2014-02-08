@@ -11,7 +11,7 @@ $(function(){
         // CLONE ALL IMAGES (bigger than height:150px) INTO GUI
         $( 'img' ).each(function() {
 
-            if ( $( this ).css("height") >= '150px') {
+            if ( $( this ).height() >= 75 ) {
                 $( this ).clone().appendTo( '.Catchframe123' );
             }
 
